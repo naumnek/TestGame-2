@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ancestor
+  - ClosedMenus
+  - Canvas
+  - Managers
+  - LoadingScreen
+  - StartMenu
+  - CharacterManager
+  - Menu
+  - ChooseLogic
+  - Timer
+  - Characters
+  - Character
+  - Spectator
+  - SaveObjects
   layers:
   - Default
   - TransparentFX
@@ -13,10 +27,10 @@ TagManager:
   - UI
   - 
   - 
+  - PostProcessing
   - 
-  - 
-  - 
-  - 
+  - FirstPersonWeapon
+  - PhysicalAmmo
   - 
   - 
   - 
@@ -38,6 +52,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 788040023
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 3922283465
     locked: 0
