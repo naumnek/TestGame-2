@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScreenLoad : MonoBehaviour
+
+namespace naumnek.FPS
 {
-    public void OnAnimationOver(string v)
+    public class ScreenLoad : MonoBehaviour
     {
-        FileManager fm = FileManager.GetFileManager();
-        switch (v)
+        public void OnAnimationOver(string v)
         {
-            case ("Unvisibily"):
-                fm.EndLoadScene();
-                break;
-            case ("Visibily"):
-                fm.StartLoadScene();
-                break;
+            FileManager fm = FileManager.GetFileManager();
+            switch (v)
+            {
+                case ("Unvisibily"):
+                    fm.EndLoadScene();
+                    break;
+                case ("Visibily"):
+                    fm.StartLoadScene();
+                    break;
+            }
         }
     }
 }

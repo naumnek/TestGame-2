@@ -2,38 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadManager : MonoBehaviour
+
+namespace naumnek.FPS
 {
-    public bool loadFileManager = false;
-    public GameObject general;
-    public GameObject GameManager;
-    public GameObject Player;
-    public GameObject MainCamera;
-    public FileManager _fileManager;
-    private static LoadManager instance;
-
-    void Start()
+    public class LoadManager : MonoBehaviour
     {
-        instance = this;
-        MainCamera = Player.gameObject.transform.GetChild(0).gameObject;
-        if(loadFileManager)
+        public bool load = true;
+        public GameObject general;
+        public GameObject GameManager;
+        public GameObject Player;
+        public GameObject MainCamera;
+        public FileManager _fileManager;
+        private static LoadManager instance;
+
+        void Start()
         {
-            _fileManager = FileManager.GetFileManager();
-            _fileManager._LoadManager = this.GetComponent<LoadManager>();
+            instance = this;
+            MainCamera = Player.gameObject.transform.GetChild(0).gameObject;
         }
-    }
 
-    private void Update()
-    {
-        if (!FileManager.load)
+        private void Update()
         {
-            LoadObjects();
+            if (!FileManager.load && load)
+            {
+                load = false;
+                _fileManager = FileManager.GetFileManager();
+                _fileManager._LoadManager = this.GetComponent<LoadManager>();
+                LoadObjects();
+            }
         }
-    }
 
-    // Start is called before the first frame update
-    public void LoadObjects()
-    {
-        general.SetActive(true);
+        // Start is called before the first frame update
+        public void LoadObjects()
+        {
+            general.SetActive(true);
+        }
     }
 }
+
