@@ -1,0 +1,17 @@
+{
+    "name": "fps.Game",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1826c0224c0d048b88112c79bbb0cd85",
+        "GUID:3ce42be8e83562c4384cdeb4a9c7de9e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

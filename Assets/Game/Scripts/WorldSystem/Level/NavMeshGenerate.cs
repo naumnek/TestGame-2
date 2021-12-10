@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavMeshGenerate : MonoBehaviour
+namespace naumnek.FPS
 {
-    // Start is called before the first frame update
-    void Start()
+    public class NavMeshGenerate : MonoBehaviour
     {
-        GetComponent<NavMeshSurface>().
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+        }
 
+    }
 }
+
