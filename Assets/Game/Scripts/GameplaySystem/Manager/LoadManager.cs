@@ -36,6 +36,9 @@ namespace naumnek.FPS
         public void LoadObjects()
         {
             general.SetActive(true);
+            NavMeshGenerate.StartBuildNavMesh();
+            Player.transform.position = GameObject.FindGameObjectWithTag("Spawnpoint").transform.position;
+            Player.GetComponent<CharacterController>().enabled = true;
         }
     }
 }

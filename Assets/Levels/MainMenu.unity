@@ -19070,6 +19070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a1831073805a674fab023123ef8df23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkLoad: 0
   GameVersion: fps_1
   ValueLoading: {fileID: 1550824925}
   ValueLoadingBar: {fileID: 303247170}
