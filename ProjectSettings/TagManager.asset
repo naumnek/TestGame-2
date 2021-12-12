@@ -4,15 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - SaveObjects
+  - Timer
   - Managers
   - Canvas
   - ClosedMenus
   - CharacterManager
   - LoadingScreen
   - StartMenu
-  - SaveObjects
-  - Timer
   - Spawnpoint
+  - EnemySpawner
   layers:
   - Default
   - TransparentFX
